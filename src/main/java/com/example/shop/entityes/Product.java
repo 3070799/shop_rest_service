@@ -1,4 +1,4 @@
-package com.example.shop;
+package com.example.shop.entityes;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -16,11 +16,16 @@ public class Product {
 	@Column(nullable = false, length = 1000)
 	private String description;
 	
+	
+
 	public Product(Long id, String name, String description) {
-		super();
 		this.id = id;
 		this.name = name;
 		this.description = description;
+	}
+
+	public Product() {
+		
 	}
 
 	public Long getId() {
